@@ -41,13 +41,11 @@ After 3 rounds, view your final results and choose to restart the game.
 
 ## Input Validation
 
-### Number Validation
+### Number & Letter Validation
 <p align="center">
+  <strong>Number Validation</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Letter Validation</strong>
+  <br>
   <img width="45%" alt="Number Validation" src="https://github.com/user-attachments/assets/e984e453-55de-43d4-a783-0991c4c81141" style="border-radius:10px; border: 2px solid #000;" />
-</p>
-
-### Letter Validation
-<p align="center">
   <img width="45%" alt="Letter Validation" src="https://github.com/user-attachments/assets/ab3cf017-2606-47fb-ace4-c949e4420ee1" style="border-radius:10px; border: 2px solid #000;" />
 </p>
 

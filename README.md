@@ -1,16 +1,16 @@
 # Number Guessing Game with Java 🎮
 The Number Guessing Game is a fun and interactive desktop application built using Java Swing. The game challenges players to guess a randomly generated number within a specified range (1 to 100) in a limited number of attempts (15 attempts per round).
 
-## Table of Contents
-- [Features](#features-)
-- [Future Features](#future-features-)
-- [How to Play](#how-to-play-)
-- [Installation & Setup](#installation--setup-)
-- [Technologies Used](#technologies-used-)
-- [Screenshots](#screenshots-)
-- [Contributing](#contributing-)
-- [License](#license-)
-- [Support](#support-)
+## Table of Contents 🗂️
+- [Features 🚀](#features-)
+- [Future Features 🚧](#future-features-)
+- [How to Play 🎮](#how-to-play-)
+- [Installation & Setup 🛠️](#installation--setup-)
+- [Technologies Used 🛠️](#technologies-used-)
+- [Screenshots 📸](#screenshots-)
+- [Contributing 🤝](#contributing-)
+- [License 📝](#license-)
+- [Support ❤️](#support-)
 
 ## Features 🚀
 ✅ Three Rounds: The game consists of 3 rounds, and players earn scores based on the number of attempts taken.<br>
@@ -44,12 +44,24 @@ Before you begin, ensure you have the following installed:
 
 ### Steps to Run
 #### 1️⃣ Clone this repository:
-*git clone https://github.com/your-username/NumberGuessingGame.git* <br>
+```bash
+git clone https://github.com/your-username/NumberGuessingGame.git
+```
+---
+
 #### 2️⃣ Navigate to the project folder:
-*cd NumberGuessingGame* <br>
+```bash
+cd NumberGuessingGame
+```
+---
+
 #### 3️⃣ Compile and run the Java file:
-*javac NumberGuessingGame.java* <br>
-*java NumberGuessingGame* <br>
+```bash
+javac NumberGuessingGame.java
+java NumberGuessingGame
+```
+---
+
 
 🎉 Enjoy the game!
 

@@ -22,23 +22,20 @@ Java Development Kit (JDK 11+)
 IDE like IntelliJ IDEA or Eclipse
 
 ### Steps to Run
-
 1️⃣ Clone this repository:
-git clone https://github.com/your-username/NumberGuessingGame.git
-
+*git clone https://github.com/your-username/NumberGuessingGame.git* <br>
 2️⃣ Navigate to the project folder:
-cd NumberGuessingGame
-
+*cd NumberGuessingGame* <br>
 3️⃣ Compile and run the Java file:
-javac NumberGuessingGame.java
-java NumberGuessingGame
+*javac NumberGuessingGame.java*
+*java NumberGuessingGame* <br>
 
 🎉 Enjoy the game!
 
 ## Teachnologies Used 🛠️
-🔹 Java Swing - UI Design
-🔹 Java AWT - Event Handling
-🔹 OOP (Object-Oriented Programming) - Game Logic
+🔹 Java Swing - UI Design<br>
+🔹 Java AWT - Event Handling<br>
+🔹 OOP (Object-Oriented Programming) - Game Logic<br>
 
 # Screenshots 📸
 ## Round 1 Game Screen
@@ -72,4 +69,15 @@ java NumberGuessingGame
   <img width="45%" alt="Letter Validation" src="https://github.com/user-attachments/assets/ab3cf017-2606-47fb-ace4-c949e4420ee1" style="border-radius:10px; border: 2px solid #000;" />
 </p>
 
+## Contributing 🤝
+🎯 Want to improve this game? Contributions are welcome!
+
+1️⃣ Fork this repo.2️⃣ Create a new branch:
+*git checkout -b feature-branch* <br>
+3️⃣ Make changes & commit:
+*git commit -m "Added a new feature"* <br>
+4️⃣ Push to GitHub & create a PR!
+
+## License 📝
+This project is licensed under the MIT License – you're free to modify and share it!
 

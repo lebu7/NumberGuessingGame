@@ -1,12 +1,27 @@
 # Number Guessing Game with Java 🎮
 The Number Guessing Game is a fun and interactive desktop application built using Java Swing. The game challenges players to guess a randomly generated number within a specified range (1 to 100) in a limited number of attempts (15 attempts per round).
 
+## Table of Contents
+- [Features](#features-)
+- [Future Features](#future-features-)
+- [How to Play](#how-to-play-)
+- [Installation & Setup](#installation--setup-)
+- [Technologies Used](#technologies-used-)
+- [Screenshots](#screenshots-)
+- [Contributing](#contributing-)
+- [License](#license-)
+
 ## Features 🚀
 ✅ Three Rounds: The game consists of 3 rounds, and players earn scores based on the number of attempts taken.<br>
 ✅ Real-Time Feedback: Displays if the guessed number is too high or too low.<br>
 ✅ Best Score Tracking: Records and displays the best score achieved.<br>
 ✅ Give Up Option: Players can reveal the correct number if stuck.<br>
-✅ Dark Mode Toggle: Enables better visual comfort..
+✅ Dark Mode Toggle: Enables better visual comfort.
+
+## Future Features 🚧
+- Add multiplayer support.
+- Implement a timer for each round.
+- Add sound effects and background music.
 
 ## How to Play 🎮
 1️⃣ Enter a number between 1 and 100 in the input field.<br>
@@ -19,7 +34,7 @@ The Number Guessing Game is a fun and interactive desktop application built usin
 Follow these steps to run the game on your system:
 ### Prerequisites
 Java Development Kit (JDK 11+)
-IDE like IntelliJ IDEA or Eclipse
+IDE like IntelliJ IDEA, NetBeans or Eclipse
 
 ### Steps to Run
 1️⃣ Clone this repository:
@@ -32,7 +47,7 @@ IDE like IntelliJ IDEA or Eclipse
 
 🎉 Enjoy the game!
 
-## Teachnologies Used 🛠️
+## Technologies Used 🛠️
 🔹 Java Swing - UI Design<br>
 🔹 Java AWT - Event Handling<br>
 🔹 OOP (Object-Oriented Programming) - Game Logic<br>
@@ -72,7 +87,8 @@ IDE like IntelliJ IDEA or Eclipse
 ## Contributing 🤝
 🎯 Want to improve this game? Contributions are welcome!
 
-1️⃣ Fork this repo.2️⃣ Create a new branch:
+1️⃣ Fork this repo.
+2️⃣ Create a new branch:
 *git checkout -b feature-branch* <br>
 3️⃣ Make changes & commit:
 *git commit -m "Added a new feature"* <br>
@@ -80,4 +96,7 @@ IDE like IntelliJ IDEA or Eclipse
 
 ## License 📝
 This project is licensed under the MIT License – you're free to modify and share it!
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Support ❤️
+If you encounter any issues or have questions, feel free to [open an issue](https://github.com/lebu7/NumberGuessingGame/issues) on GitHub.

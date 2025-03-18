@@ -10,6 +10,7 @@ The Number Guessing Game is a fun and interactive desktop application built usin
 - [Screenshots](#screenshots-)
 - [Contributing](#contributing-)
 - [License](#license-)
+- [Support](#support-)
 
 ## Features 🚀
 ✅ Three Rounds: The game consists of 3 rounds, and players earn scores based on the number of attempts taken.<br>
@@ -31,18 +32,23 @@ The Number Guessing Game is a fun and interactive desktop application built usin
 5️⃣ After 3 rounds, view your final results and restart the game.
 
 ## Installation & Setup 🛠️
+
 Follow these steps to run the game on your system:
+
 ### Prerequisites
-Java Development Kit (JDK 11+)
-IDE like IntelliJ IDEA, NetBeans or Eclipse
+Before you begin, ensure you have the following installed:
+- **Java Development Kit (JDK 11 or higher)**: [Download JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
+- **IDE (Optional)**: Use an IDE like [IntelliJ IDEA](https://www.jetbrains.com/idea/), [Eclipse](https://www.eclipse.org/), or [NetBeans](https://netbeans.apache.org/) for a better development experience.
+
+---
 
 ### Steps to Run
-1️⃣ Clone this repository:
+#### 1️⃣ Clone this repository:
 *git clone https://github.com/your-username/NumberGuessingGame.git* <br>
-2️⃣ Navigate to the project folder:
+#### 2️⃣ Navigate to the project folder:
 *cd NumberGuessingGame* <br>
-3️⃣ Compile and run the Java file:
-*javac NumberGuessingGame.java*
+#### 3️⃣ Compile and run the Java file:
+*javac NumberGuessingGame.java* <br>
 *java NumberGuessingGame* <br>
 
 🎉 Enjoy the game!

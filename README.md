@@ -107,14 +107,19 @@ java NumberGuessingGame
 
 1️⃣ Fork this repo.
 2️⃣ Create a new branch:
-*git checkout -b feature-branch* <br>
+```bash
+git checkout -b feature-branch
+```
+---
 3️⃣ Make changes & commit:
-*git commit -m "Added a new feature"* <br>
+``` bash
+git commit -m "Added a new feature"
+```
+---
 4️⃣ Push to GitHub & create a PR!
 
 ## License 📝
-This project is licensed under the MIT License – you're free to modify and share it!
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) This project is licensed under the MIT License – you're free to modify and share it!
 
 ## Support ❤️
 If you encounter any issues or have questions, feel free to [open an issue](https://github.com/lebu7/NumberGuessingGame/issues) on GitHub.

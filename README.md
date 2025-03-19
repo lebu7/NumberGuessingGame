@@ -6,6 +6,8 @@ The Number Guessing Game is a fun and interactive desktop application built usin
 - [Future Features 🚧](#future-features-)
 - [How to Play 🎮](#how-to-play-)
 - [Installation & Setup 🛠️](#installation--setup-)
+  - [Download and Play 🎮](#download-and-play-)
+  - [Setup and Run 💻](#setup-and-run-)
 - [Technologies Used 🛠️](#technologies-used-)
 - [Screenshots 📸](#screenshots-)
 - [Contributing 🤝](#contributing-)

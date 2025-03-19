@@ -45,6 +45,7 @@ Before you begin, ensure you have the following installed:
 ---
 
 ### Steps to Run
+
 #### 1️⃣ Clone this repository:
 ```bash
 git clone https://github.com/lebu7/NumberGuessingGame.git

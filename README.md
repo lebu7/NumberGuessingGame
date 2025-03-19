@@ -61,9 +61,23 @@ javac NumberGuessingGame.java
 java NumberGuessingGame
 ```
 ---
+### Download and Play 🎮
 
+#### 1️⃣ Download the Game
+- Go to the [Releases page](https://github.com/your-username/NumberGuessingGame/releases) and download the latest `NumberGuessingGame.jar` file.
 
+#### 2️⃣ Install Java (if not already installed)
+- Ensure you have Java installed on your system. If not, download it from [here](https://www.oracle.com/java/technologies/javase-downloads.html).
+
+#### 3️⃣ Run the Game
+- Open a terminal or command prompt.
+- Navigate to the folder where the JAR file is downloaded.
+- Run the following command:
+  ```bash
+  java -jar NumberGuessingGame.jar
+  ```
 🎉 Enjoy the game!
+---
 
 ## Technologies Used 🛠️
 🔹 Java Swing - UI Design<br>

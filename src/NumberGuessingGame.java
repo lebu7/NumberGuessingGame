@@ -4,8 +4,9 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
 
+// OOP Principle: Encapsulation - This class encapsulates all game logic and UI components
 public class NumberGuessingGame extends JFrame {
-    // Game state variables
+    // OOP Principle: Encapsulation - Game state variables are private and accessed through methods
     private int targetNumber; // The number the player needs to guess
     private int attempts; // Number of attempts made by the player
     private int bestScore = 0; // Best score across all rounds
@@ -14,14 +15,14 @@ public class NumberGuessingGame extends JFrame {
     private final int[] roundScores = new int[totalRounds]; // Stores scores for each round
     private final int[] roundAttempts = new int[totalRounds]; // Stores attempts for each round
 
-    // GUI components
+    // OOP Principle: Composition - The game contains various UI components as parts
     private final JLabel bestScoreLabel, guessesLeftLabel, headingLabel, resultLabel, leftImageLabel, rightImageLabel, roundLabel;
     private final JTextField guessField; // Input field for the player's guess
     private final JButton guessButton, giveUpButton, nextRoundButton, darkModeToggleButton; // Buttons for actions
     private boolean isDarkMode; // Tracks whether dark mode is enabled
     private final Color LIGHT_MODE_BACKGROUND = new Color(240, 240, 240), DARK_MODE_BACKGROUND = Color.DARK_GRAY; // Background colors
 
-    // Constructor: Initializes the game window and components
+    // OOP Principle: Constructor - Initializes the object's state
     public NumberGuessingGame() {
         setTitle("GUESS MY NUMBER"); // Set window title
         setSize(600, 350); // Set window size
@@ -29,7 +30,7 @@ public class NumberGuessingGame extends JFrame {
         setLayout(null); // Use absolute positioning for components
         getContentPane().setBackground(LIGHT_MODE_BACKGROUND); // Set initial background color
 
-        // Create and add labels for best score, guesses left, and round number
+        // OOP Principle: Abstraction - Helper methods hide implementation details
         bestScoreLabel = createLabel("🏆 Best Score: 0", 50, 25, 150, 20);
         guessesLeftLabel = createLabel("🎯 Guesses Left: " + maxAttempts, 400, 25, 150, 20);
         roundLabel = createLabel("", 220, 5, 150, 20);
@@ -67,7 +68,7 @@ public class NumberGuessingGame extends JFrame {
         resultLabel.setForeground(Color.BLACK);
         add(resultLabel);
 
-        // Create and add buttons for actions
+        // OOP Principle: Polymorphism - Buttons use different listeners but same ActionListener interface
         guessButton = createButton("Guess", 250, 220, 100, 30);
         giveUpButton = createButton("Give up!", 150, 260, 100, 30);
         nextRoundButton = createButton("Next Round", 350, 260, 100, 30);
@@ -79,7 +80,7 @@ public class NumberGuessingGame extends JFrame {
         setVisible(true); // Make the window visible
     }
 
-    // Helper method to create and configure a label
+    // OOP Principle: Helper methods demonstrate method abstraction
     private JLabel createLabel(String text, int x, int y, int width, int height) {
         JLabel label = new JLabel(text);
         label.setBounds(x, y, width, height);
@@ -88,7 +89,6 @@ public class NumberGuessingGame extends JFrame {
         return label;
     }
 
-    // Helper method to create and configure an image label
     private JLabel createImageLabel(String path, int x, int y, int width, int height) {
         ImageIcon icon = new ImageIcon(new ImageIcon(getClass().getResource(path)).getImage().getScaledInstance(width, height, Image.SCALE_SMOOTH));
         JLabel label = new JLabel(icon);
@@ -97,7 +97,6 @@ public class NumberGuessingGame extends JFrame {
         return label;
     }
 
-    // Helper method to create and configure a button
     private JButton createButton(String text, int x, int y, int width, int height) {
         JButton button = new JButton(text);
         button.setBounds(x, y, width, height);
@@ -106,10 +105,9 @@ public class NumberGuessingGame extends JFrame {
         return button;
     }
 
-    // Helper method to create and configure an icon button (e.g., dark mode toggle)
     private JButton createIconButton(String iconPath, int x, int y, int width, int height) {
         JButton button = new JButton();
-        button.setIcon(new ImageIcon(new ImageIcon(getClass().getResource(iconPath)).getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
+        button.setIcon(new ImageIcon(new ImageIcon(getClass().getResource(iconPath)).getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH));
         button.setBounds(x, y, width, height);
         button.setBorderPainted(false); // Remove button border
         button.setContentAreaFilled(false); // Remove button background
@@ -118,7 +116,7 @@ public class NumberGuessingGame extends JFrame {
         return button;
     }
 
-    // Set up event listeners for buttons and input field
+    // OOP Principle: Event handling demonstrates loose coupling
     private void setupListeners() {
         // Add action listeners for buttons
         guessButton.addActionListener(new GuessButtonListener());
@@ -144,7 +142,7 @@ public class NumberGuessingGame extends JFrame {
         });
     }
 
-    // Toggle between light and dark mode
+    // OOP Principle: Encapsulation - Internal state modification is controlled
     private void toggleDarkMode() {
         isDarkMode = !isDarkMode;
         getContentPane().setBackground(isDarkMode ? DARK_MODE_BACKGROUND : LIGHT_MODE_BACKGROUND); // Update background color
@@ -152,7 +150,7 @@ public class NumberGuessingGame extends JFrame {
         darkModeToggleButton.setIcon(new ImageIcon(new ImageIcon(getClass().getResource(isDarkMode ? "/resources/sun.png" : "/resources/moon.png")).getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH))); // Update icon
     }
 
-    // Start a new game (reset all game state)
+    // OOP Principle: Game state management methods
     private void startNewGame() {
         currentRound = 1; // Reset to the first round
         bestScore = 0; // Reset the best score
@@ -170,7 +168,6 @@ public class NumberGuessingGame extends JFrame {
         resetRound(); // Reset the current round
     }
 
-    // Start the next round or end the game if all rounds are completed
     private void startNextRound() {
         if (currentRound > totalRounds) {
             showGameOver(); // Show the game over screen if all rounds are completed
@@ -179,7 +176,6 @@ public class NumberGuessingGame extends JFrame {
         resetRound(); // Reset the round state
     }
 
-    // Reset the current round (generate a new target number and reset attempts)
     private void resetRound() {
         targetNumber = new Random().nextInt(maxRange - minRange + 1) + minRange; // Generate a new target number
         attempts = 0; // Reset attempts
@@ -194,13 +190,13 @@ public class NumberGuessingGame extends JFrame {
         updateRoundLabel(); // Update the round label
     }
 
-    // Update the round label with the current round number
     private void updateRoundLabel() {
         roundLabel.setText("<html>Round: <font color='green'>" + currentRound + "</font>/<font color='green'>" + totalRounds + "</font></html>");
     }
 
-    // Action listener for the guess button
+    // OOP Principle: Inner class demonstrates encapsulation and event handling
     private class GuessButtonListener implements ActionListener {
+        // OOP Principle: Polymorphism - Implementing ActionListener interface
         public void actionPerformed(ActionEvent e) {
             try {
                 int guess = Integer.parseInt(guessField.getText()); // Get the player's guess
@@ -243,7 +239,6 @@ public class NumberGuessingGame extends JFrame {
         }
     }
 
-    // End the current round (won or lost)
     private void endRound(boolean won, boolean gaveUp) {
         guessField.setEnabled(false); // Disable the input field
         guessButton.setEnabled(false); // Disable the guess button
@@ -267,7 +262,7 @@ public class NumberGuessingGame extends JFrame {
         }
     }
 
-    // Show the game over screen with round results
+    // OOP Principle: Complex UI creation is encapsulated in a method
     private void showGameOver() {
         JDialog gameOverDialog = new JDialog(this, "", true); // Create a dialog for the game over screen
         gameOverDialog.setSize(400, 300); // Set the dialog size
@@ -290,7 +285,7 @@ public class NumberGuessingGame extends JFrame {
 
         // Load and add the question mark image
         ImageIcon questionMarkIcon = new ImageIcon(getClass().getResource("/resources/question_mark.png"));
-        JLabel imageLabel = new JLabel(new ImageIcon(questionMarkIcon.getImage().getScaledInstance(80, 80, Image.SCALE_SMOOTH)));
+        JLabel imageLabel = new JLabel(new ImageIcon(questionMarkIcon.getImage().getScaledInstance(80, 80, Image.SCALE_SMOOTH));
 
         // Create a panel for the round results
         JPanel resultsPanel = new JPanel();
@@ -341,8 +336,9 @@ public class NumberGuessingGame extends JFrame {
         gameOverDialog.setVisible(true); // Make the dialog visible
     }
 
-    // Main method: Entry point of the application
+    // OOP Principle: Main method demonstrates entry point for the application
     public static void main(String[] args) {
+        // OOP Principle: Instantiation - Creating an instance of the game
         new NumberGuessingGame(); // Create and start the game
     }
-}
+                               }
